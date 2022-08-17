@@ -1,0 +1,60 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height : 60px;
+    background : red;
+    line-height: 60px;
+}
+
+.icon{
+    margin-left : 5%
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width :50%;
+    flex: 0 1 1;
+}
+
+.fa-solid{
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        overflow : hidden;
+        box-sizing: border-box;
+    }
+    .fa-solid{
+        display: block;
+        margin-top : 3%;
+        margin-right : 5%;
+        font-size: 24px;
+        cursor : pointer
+    }
+
+    .list{
+        display: flex;
+        flex-direction : column;
+        justify-content: space-between;
+        height: 60vh;
+        position : absolute;
+        top : 6.2%;
+        left : 60%;
+        width : 100%;
+        background-color: gray;
+       
+    }
+
+    .list li {
+        margin-left :15%
+    }
+}
